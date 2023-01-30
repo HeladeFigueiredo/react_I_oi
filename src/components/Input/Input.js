@@ -1,9 +1,9 @@
 
-function Input(props) {
+function Input({label, type}) {
     return(
         <div>
-            <label for='input'> {props.label} </label>
-            <input name='input' type={props.type}/>
+            <label for='input'> {label} </label>
+            <input name='input' type={type}/>
         </div>
     )
 }

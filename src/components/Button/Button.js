@@ -1,8 +1,8 @@
 
-function Button(props) {
+function Button ({redirecionar, nome}) {
     return(
         <div>
-            <button onClick={props.redirecionar}> {props.nome} </button>
+            <button onClick={redirecionar}> {nome} </button>
         </div>
     )
 }

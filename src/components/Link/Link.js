@@ -1,8 +1,8 @@
 
-function Link(props) {
+function Link({href}) {
     return(
         <div>
-            <a href={props.href} target='_blanck'>
+            <a href={href}>
                 <p> Esqueci minha senha </p>
             </a>
         </div>
