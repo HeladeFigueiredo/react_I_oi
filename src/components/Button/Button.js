@@ -1,5 +1,5 @@
 
-function Button ({redirecionar, nome}) {
+const Button = ({redirecionar, nome}) => {
     return(
         <div>
             <button onClick={redirecionar}> {nome} </button>

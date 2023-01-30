@@ -1,5 +1,5 @@
 
-function Input({label, type}) {
+const Input = ({label, type}) => {
     return(
         <div>
             <label for='input'> {label} </label>

@@ -1,17 +1,18 @@
 import { useNavigate } from 'react-router-dom'
 import Button from "../../components/Button/Button"
+import Title from '../../components/Title/Title'
 
-function Home() {
+const Home = () => {
 
     const navigate = useNavigate()
 
-    function vaParaLogin() {
+    const vaParaLogin = () => {
         navigate('/')
     }
 
     return (
         <div>
-            <h1> Home </h1>
+            <Title title='Home' />
             <Button nome='Voltar' redirecionar={vaParaLogin} />
         </div>
     )

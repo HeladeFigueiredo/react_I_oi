@@ -5,11 +5,11 @@ import Input from '../../components/Input/Input'
 import Button from '../../components/Button/Button';
 import Link from '../../components/Link/Link';
 
-function Login() {
+const Login = () => {
 
     const navigate = useNavigate()
 
-    function vaParaHome() {
+    const vaParaHome = () => {
         navigate('./home')
     }
 
