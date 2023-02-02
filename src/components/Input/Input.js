@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
 
-const Input = ({label, type}) => {
+const Input = ({label, type, setValue}) => {
     return(
         <div>
             <label> {label} </label>
-            <input type={type}/>
+            <input type={type} onChange={(e) => setValue(e.target.value)}/>
         </div>
     )
 }
@@ -20,9 +19,3 @@ Input.defaultProps = {
 
 export default Input
 
-// Adicione uma label na tela de login e altere pelo valor digitado no input usuário - vídeo no YT 
-// onChange
-
-// componente Subtitle <h2></h2>
-// usa o useState
-// recebe o valor igual o Title mas com o .value do input
