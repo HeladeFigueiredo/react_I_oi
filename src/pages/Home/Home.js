@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <Title title='Home' />
-            <Button nome='Voltar' redirecionar={vaParaLogin} />
+            <Button title='Voltar' aoClicar={vaParaLogin} />
         </div>
     )
 }
