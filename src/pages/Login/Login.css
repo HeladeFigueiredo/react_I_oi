@@ -7,13 +7,17 @@
 .content {
     background-color: lightcoral;
     width: 40%;
-    height: 45%;
+    height: 50%;
     text-align: center;
     margin: 200px auto;
 }
 
-.title {
-    margin-top: 38px;
+.input label {
+    font-size: 24px;
+}
+
+.input input {
+    font-size: 20px;
 }
 
 li {

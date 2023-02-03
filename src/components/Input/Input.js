@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 
-const Input = ({label, type, onChange, color}) => {
+const Input = ({label, type, onChange, color, fontSize }) => {
     return(
         <div>
-            <label style={{color: color}} > {label} </label>
-            <input type={type} onChange={onChange} />
+            <label style={{color: color, fontSize: fontSize}} > {label} </label>
+            <input type={type} onChange={onChange} style={{fontSize: fontSize}}/>    
         </div>
     )
 }

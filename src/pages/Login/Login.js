@@ -60,15 +60,15 @@ const Login = () => {
     return (
         <div className='container'>
             <div className='content'>
-                <Title title={title} className='title'/>
+                <Title title={title} fontSize='38px' marginTop='30px'/>
         
                 {showError ? 
                 <Subtitle subtitle='Credenciais inválidas'/> 
                 : 
                 <span> Ainda não digitou as credencias </span> }
                 
-                <Input label='Usuário' type='text' onChange={(e) => setNomeDeUsuario(e.target.value)} color={showError ? inputColor : null}/>
-                <Input label='Senha' type='password' onChange={(e) => setSenha(e.target.value)} color={showError ? inputColor : null}/>
+                <Input label='Usuário' type='text' onChange={(e) => setNomeDeUsuario(e.target.value)} color={showError ? inputColor : null} fontSize='20px'/>
+                <Input label='Senha' type='password' onChange={(e) => setSenha(e.target.value)} color={showError ? inputColor : null} fontSize='20px'/>
 
                 <ul>
                     {usuarios.map((usuario) => (

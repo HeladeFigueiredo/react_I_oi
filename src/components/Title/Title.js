@@ -1,9 +1,9 @@
 import Proptypes from 'prop-types'
 
-const Title = ({title, className}) => {
+const Title = ({title, fontSize, marginTop}) => {
     return(
         <div>
-            <h1 className={className}>{title}</h1>
+            <h1 style={{fontSize: fontSize, marginTop: marginTop}}>{title}</h1>
         </div>
     )
 }
