@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 
-const Input = ({label, type, setValue}) => {
+const Input = ({label, type, onChange, cor}) => {
     return(
         <div>
-            <label> {label} </label>
-            <input type={type} onChange={(e) => setValue(e.target.value)}/>
+            <label style={{color: cor}}> {label} </label>
+            <input type={type} onChange={onChange} />
         </div>
     )
 }
