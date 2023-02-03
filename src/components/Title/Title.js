@@ -1,9 +1,9 @@
 import Proptypes from 'prop-types'
 
-const Title = ({title}) => {
+const Title = ({title, className}) => {
     return(
         <div>
-            <h1>{title}</h1>
+            <h1 className={className}>{title}</h1>
         </div>
     )
 }

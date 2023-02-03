@@ -59,25 +59,27 @@ const Login = () => {
 
     return (
         <div className='container'>
-            <Title title={title} />
+            <div className='content'>
+                <Title title={title} className='title'/>
+        
+                {showError ? 
+                <Subtitle subtitle='Credenciais inválidas'/> 
+                : 
+                <span> Ainda não digitou as credencias </span> }
+                
+                <Input label='Usuário' type='text' onChange={(e) => setNomeDeUsuario(e.target.value)} color={showError ? inputColor : null}/>
+                <Input label='Senha' type='password' onChange={(e) => setSenha(e.target.value)} color={showError ? inputColor : null}/>
 
-            {showError ? 
-            <Subtitle subtitle='Credenciais inválidas'/> 
-            : 
-            <span> Ainda não digitou as credencias </span> }
-            
-            <Input label='Usuário' type='text' onChange={(e) => setNomeDeUsuario(e.target.value)} color={showError ? inputColor : null}/>
-            <Input label='Senha' type='password' onChange={(e) => setSenha(e.target.value)} color={showError ? inputColor : null}/>
+                <ul>
+                    {usuarios.map((usuario) => (
+                        <li key={usuario.email}> {usuario.email} </li>
+                    ))}
+                </ul>
 
-            <ul>
-                {usuarios.map((usuario) => (
-                    <li key={usuario.email}> {usuario.email} </li>
-                ))}
-            </ul>
-
-            <Button title='Entrar' aoClicar={vaParaHome} bgColor='#ff6f9c'/>
-            <Button title='Trocar título' aoClicar={mudarTitulo} />
-            <Link href='https://www.youtube.com/'/>
+                <Button title='Entrar' aoClicar={vaParaHome} bgColor='#ff6f9c'/>
+                <Button title='Trocar título' aoClicar={mudarTitulo} />
+                <Link href='https://www.youtube.com/'/>
+            </div>
         </div>
     );
 }

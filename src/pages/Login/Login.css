@@ -1,11 +1,21 @@
 .container {
+    height: 96vh;
+    background-color: #efefef;
+    display: flex;
+}
+
+.content {
+    background-color: lightcoral;
     width: 40%;
-    margin: 200px auto;
+    height: 45%;
     text-align: center;
-    background-color: #ffcbcb;
+    margin: 200px auto;
+}
+
+.title {
+    margin-top: 38px;
 }
 
 li {
     list-style: none;
 }
-
