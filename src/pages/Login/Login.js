@@ -46,6 +46,7 @@ const Login = () => {
 
         if (usuarioEscolhido) {
             navigate('./home', { state: { listaDeUsuarios: usuarios } })
+            localStorage.setItem('usuario', nomeDeUsuario);
         } else {
             setShowError(true)
         }
