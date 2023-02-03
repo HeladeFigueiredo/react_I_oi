@@ -1,0 +1,11 @@
+.container {
+    width: 40%;
+    margin: 200px auto;
+    text-align: center;
+    background-color: #ffcbcb;
+}
+
+li {
+    list-style: none;
+}
+
