@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 
-const Input = ({label, type, onChange, cor}) => {
+const Input = ({label, type, onChange, color}) => {
     return(
         <div>
-            <label style={{color: cor}}> {label} </label>
+            <label style={{color: color}} > {label} </label>
             <input type={type} onChange={onChange} />
         </div>
     )
@@ -11,6 +11,7 @@ const Input = ({label, type, onChange, cor}) => {
 
 Input.propTypes = {
     label: PropTypes.string.isRequired,
+    color: PropTypes.string
 }
 
 Input.defaultProps = {
